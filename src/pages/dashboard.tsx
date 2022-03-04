@@ -75,7 +75,7 @@ export default function Dashboard() {
                     minChildWidth="320px"
                 >
                     <Box
-                        p="8"
+                        p={["6","8"]}
                         bg="gray.800"
                         rounded={8}
                         pb="4"
