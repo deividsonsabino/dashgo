@@ -783,6 +783,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@faker-js/faker@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-6.0.0.tgz#b613ebf5f5ebb2ab987afb567d8b7fe860199c13"
+  integrity sha512-10zLCKhp3YEmBuko71ivcMoIZcCLXgQVck6aNswX+AWwaek/L8S3yz9i8m3tHigRkcF6F2vI+qtdtyySHK+bGA==
+
 "@hookform/resolvers@^2.8.8":
   version "2.8.8"
   resolved "https://registry.yarnpkg.com/@hookform/resolvers/-/resolvers-2.8.8.tgz#17cf806485435877fdafce9f3bee6ff68f7f87b6"
@@ -1065,6 +1070,13 @@
   dependencies:
     "@styled-system/core" "^5.1.2"
     "@styled-system/css" "^5.1.5"
+
+"@types/faker@^6.6.9":
+  version "6.6.9"
+  resolved "https://registry.yarnpkg.com/@types/faker/-/faker-6.6.9.tgz#1064e7c46be58388fa326e2f918a4f02ab740a7a"
+  integrity sha512-Y9YYm5L//8ooiiknO++4Gr539zzdI0j3aXnOBjo1Vk+kTvffY10GuE2wn78AFPECwZ5MYGTjiDVw1naLLdDimw==
+  dependencies:
+    faker "*"
 
 "@types/json5@^0.0.29":
   version "0.0.29"
@@ -1828,6 +1840,11 @@ fake-xml-http-request@^2.1.2:
   resolved "https://registry.yarnpkg.com/fake-xml-http-request/-/fake-xml-http-request-2.1.2.tgz#f1786720cae50bbb46273035a0173414f3e85e74"
   integrity sha512-HaFMBi7r+oEC9iJNpc3bvcW7Z7iLmM26hPDmlb0mFwyANSsOQAtJxbdWsXITKOzZUyMYK0zYCv3h5yDj9TsiXg==
 
+faker@*, faker@^6.6.6:
+  version "6.6.6"
+  resolved "https://registry.yarnpkg.com/faker/-/faker-6.6.6.tgz#e9529da0109dca4c7c5dbfeaadbd9234af943033"
+  integrity sha512-9tCqYEDHI5RYFQigXFwF1hnCwcWCOJl/hmll0lr5D2Ljjb0o4wphb69wikeJDz5qCEzXCoPvG6ss5SDP6IfOdg==
+
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
@@ -2325,6 +2342,11 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
+lodash-es@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
+
 lodash.assign@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
@@ -2449,6 +2471,11 @@ lodash.values@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.values/-/lodash.values-4.3.0.tgz#a3a6c2b0ebecc5c2cba1c17e6e620fe81b53d347"
   integrity sha1-o6bCsOvsxcLLocF+bmIP6BtT00c=
+
+lodash@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
