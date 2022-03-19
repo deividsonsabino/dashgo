@@ -33,7 +33,7 @@ export default function UserList() {
             return {
                 id: user.id,
                 name: user.name,
-                email: user.name,
+                email: user.email,
                 createdAt: new Date(user.createdAt).toLocaleDateString('pt-Br', {
                     day: '2-digit',
                     month:'long',
@@ -42,15 +42,13 @@ export default function UserList() {
         })
 
         return users
+    }, {
+        staleTime: 1000 * 5
     })
 
     const isWideVersion = useBreakpointValue({
         base: false,
         lg: true
-    })
-
-    useEffect(() => {
-
     })
 
     return (
