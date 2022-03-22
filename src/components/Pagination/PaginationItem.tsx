@@ -11,7 +11,7 @@ export function PaginationItem({ isCurrent = false, number }: PaginationItemProp
             <Button
                 size="small"
                 fontSize="sx"
-                width="4"
+                width="6"
                 colorScheme="pink"
                 disabled
                 _disabled={{
@@ -28,7 +28,7 @@ export function PaginationItem({ isCurrent = false, number }: PaginationItemProp
         <Button
             size="small"
             fontSize="sx"
-            width="4"
+            width="6"
             bgColor="gray.700"
             _hover={{
                 bg: 'gray.500'
