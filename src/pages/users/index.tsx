@@ -16,7 +16,6 @@ import {
     useBreakpointValue
 } from "@chakra-ui/react";
 import Link from "next/link";
-import { useEffect } from "react";
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
 import { useQuery } from 'react-query'
 
@@ -25,7 +24,7 @@ import { Pagination } from "../../components/Pagination";
 import { Sidebar } from "../../components/Sidebar";
 
 export default function UserList() {
-    const { data, isLoading, error } = useQuery('users', async () => {
+    const { data, isLoading, error, isFetching } = useQuery('users', async () => {
         const response = await fetch('http://localhost:3000/api/users')
         const data = await response.json()
 
@@ -70,7 +69,10 @@ export default function UserList() {
                     p="8"
                 >
                     <Flex mb="8" justify="space-between" align="center">
-                        <Heading size="lg" fontWeight="normal">Usuários</Heading>
+                        <Heading size="lg" fontWeight="normal">
+                            Usuários
+                            {!isLoading && isFetching && <Spinner size="md" color="gray.500" ml="4" />}
+                        </Heading>
                         <Link href="/users/create" passHref>
                             <Button
                                 as="a"
